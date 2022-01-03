@@ -1,0 +1,2 @@
+# sudoku
+🪀 Sudoku playground experiment 
