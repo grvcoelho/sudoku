@@ -1,5 +1,13 @@
+import React from 'react'
 import ReactDOM from "react-dom"
-import { Root } from "./Root"
+import { Normalize } from 'styled-normalize'
+import { App } from "./App"
 
-const app = document.getElementById("app")
-ReactDOM.render(<Root />, app)
+const Root = () => (
+  <React.Fragment>
+    <Normalize />
+    <App />
+  </React.Fragment>
+)
+
+ReactDOM.render(<Root />, document.getElementById("app"))

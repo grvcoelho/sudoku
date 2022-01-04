@@ -1,0 +1,27 @@
+import styled from 'styled-components'
+import Sudoku from './components/Sudoku'
+
+
+export default function Layout ({children}) {
+  const Box = styled.div`
+    width: 90%;
+    max-width: 600px;
+  `
+  const StyledLayout = styled.main`
+    font-family: -apple-system,system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+  `
+    
+  return <StyledLayout>
+    <Box>
+      {children}
+    </Box>
+  </StyledLayout>
+}
+
+# Sudoku
+
+🪀 Sudoku playground experiment 
+
+<Sudoku />
